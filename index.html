@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Seating Chart</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="monogram" href="index.html">
+          <!-- D | V -->
+           <img src="initials4.png" style="width: 100%;">
+        </a>
+
+    </div>
+
+    <div class="main">
+    <div class="container">
+        <p class="regText" style="font-size: x-large;">FIND YOUR SEAT</p>
+
+        <div class="vertSpacer"></div>
+
+        <p class="regText">Enter your first and last name:</p>
+
+        <!-- <div class="vertSpacer"></div> -->
+
+        <div class="search">
+          <form autocomplete="off">
+            <div class="autocomplete">
+              <input type="text" id="name" class="name" name="name"><br>
+            </div>
+          </form>
+
+          <button class="enterButton">
+            <i class="fa fa-search" id="searchBtn"></i>
+          </button>
+
+        </div>
+        
+
+        <div class="vertSpacer"></div>
+
+        <p class="regText" id="errorMsg"></p>
+
+        <p class="tableNum" id="tableNum0"></p>
+        <hr id="line0" style="display: none;">
+        <ul class="tableGuests" id="tableGuests0"> </ul>
+
+        <div class="vertSpacer"></div>
+
+        <p class="tableNum" id="tableNum1"></p>
+        <hr id="line1" style="display: none;">
+        <ul class="tableGuests" id="tableGuests1"> </ul>
+
+        <div class="footer">
+          <img class="flower" src="flower2_blue.png">
+        </div>
+        
+    </div>
+    </div>
+
+    <script src="./seatingChart.js"></script>
+
+    
+</body>
+
+</html>
