@@ -260,8 +260,8 @@ function searchChart() {
 
 
 // ====================== BUTTONS ==========================
-const enterButton = document.querySelector(".enterButton");
-enterButton.addEventListener("click", searchChart);
+// const enterButton = document.querySelector(".enterButton");
+// enterButton.addEventListener("click", searchChart);
 
 const searchBar = document.getElementById("name");
 searchBar.addEventListener("keydown", function(event) {
