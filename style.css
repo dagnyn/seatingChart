@@ -1,9 +1,11 @@
 :root {
     --dark-blue: #0a2444;
     --gold: #c7b36e;
+    /* --gold: #e3f2ff; */
     --dark-gold: #b3a163;
     --medium-blue: #0d3e68;
     --cream: #f9f6e7;
+    /* --cream: #ffffff; */
 }
 
 body {

@@ -12,7 +12,7 @@ seatingChart.set("Nicholas Bertoni", [1]);
 seatingChart.set("William Bertoni", [1]);
 seatingChart.set("Jaime Lieber", [2]);
 seatingChart.set("Hal Lieber", [2]);
-seatingChart.set("Elianna Lieber", [2]);
+seatingChart.set("Eliana Lieber", [2]);
 seatingChart.set("Stuart Lieber", [2]);
 seatingChart.set("Larry Bell", [2]);
 seatingChart.set("Lydia Bell", [2]);
