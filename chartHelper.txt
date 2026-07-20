@@ -1,7 +1,6 @@
-// ========= Copy + paste from chartHelper.txt below =========
 let allNames = ["Aadi Shah", "Aaron Ruckh", "Abigail Yazdia", "Adam Demeter", "Adam Williby", "Afshin Karjoo", "Ajay Shah", "Akash Shah", "Alison Haas", "Alphonse Bertoni", "Ami Burow", "Amir Shah", "Amita Shah", "Anahita Karjoo", "Anaya Shah", "Anil Shah", "Anish Shah", "Archana Shah", "Aria Shah", "Arman Karjoo", "Arthur Oswald", "Arti Shah", "Ashley Werner", "Atit Shah", "Ava Shah", "Ayden Rebhan", "Becky Grams", "Bela Thakkar", "Betty Graves", "Bhadresh Motiwala", "Bill Lucier", "Bonnie Ruckh", "Brandi Bertoni", "Brandon Ruckh", "Bree Williby", "Caitlin Kenney", "Cassidy Roberts", "Chintu Shah", "Christine Fowler", "Cindy Magloff", "Cindy Shoemaker", "Clay Carter", "Danielle Ruckh", "David Che", "Dawn Cunningham", "Denise Bertoni", "Derek Cunningham", "Derek Noce", "Dev Shah", "Devan Burow", "Dharendra Shah", "Dilan Zaveri", "Dimple Shah", "Dipali Shah", "Eliana Lieber", "Eric Grams", "Erica Lucier", "Evelyn Shoemaker", "Everly King", "Frank DeProspo", "Gene Ruckh", "Glen Magloff", "Hal Lieber", "Hansaben Patel", "Hardik Shah", "Hemal Shah", "Hemisha Chudgar", "Hetal Shah", "Hetanxi Motiwala", "Holly Mandt", "Holly Noce", "Isabela Califano", "Jaime Lieber", "Jainim Shah", "James Clark", "Jane Che", "Janet Kaley", "Jashvant Thakkar", "Jashwant Shah", "Jason Donaldson", "Jason Oswald", "Jatin Chudgar", "Jatin Shah", "Jay Shah", "Jennifer Chudgar", "Jennifer Stoddart", "Jeremiah King", "Jigar Shah", "Jim Jenkins", "Jim Kaley", "Julie Grams", "Kaden Jenkins", "Kajol Chudgar", "Kalpana Shah", "Kandarp Shah", "Karina Zaveri", "Kashmira Shah", "Kerri Donaldson Hanna", "Khusbu Joshi", "Kiara Shah", "Kimberly Noce", "Kristi Jenkins", "Larry Bell", "Larry Langtios", "Lauren Sonnier", "Laurie O'Hara", "Lila Karjoo", "Lina Shah", "Lucas Califano", "Luke Noce", "Lydia Bell", "Madeline Lewis", "Manibhai Patel", "Mansi Chudgar", "Mark Woerishofer", "Matt Burow", "Matt Shoemaker", "Maya Burow", "Mayank Shah", "Melissa Werner", "Michele Gero", "Minesh Zaveri", "Mohini Shah", "Mohit Jani", "Mohit Pandya", "Morgan Califano", "Nan O'Hara", "Nandani Patel", "Nandu Shah", "Nathan Goldsmith", "Nayana Shah", "Nelson Norris", "Nicholas Bertoni", "Nick Bertoni", "Nick Califano", "Nick Grams", "Nicole DeProspo", "Nikisha Shah", "Nikita Shah", "Nina Zaveri", "Nitin Shah", "Norman Grams", "Ojash Shah", "Phil Long", "Phillip Goldsmith", "Pinky Shah", "Pratima Shah", "Presley Carter", "Prima Shah", "Quint Johnson", "Rachana Zaveri", "Rick Fowler", "Riya Zaveri", "Ron Graves", "Sabastian Fallon", "Sammy Jenkins", "Samuel Califano", "Sandeep Shah", "Sandra Oswald", "Sangita Shah", "Sarah Che", "Shaan Chudgar", "Shlok Motiwala", "Siren Chudgar", "Smita Shah", "Sonali Jani", "Sonya Shoemaker", "Sophia Califano", "Stacy King", "Stephanie Goldsmith", "Stuart Lieber", "Sunny Shah", "Swati Shah", "Sydney Baldwin", "Tejash Shah", "Tobin Bossola", "Tom Mandt", "Tripal Shah", "Varennyam Joshi", "Vijay Shah", "Vinita Motiwala", "Virginia Woerishofer", "Vishal Shah", "William Bertoni", "Yojana Shah", "Young Che", "Zack Graves", "Zeanna Graves", ]
 let seatingChart = new Map();
-seatingChart.set("Derek Noce!", [7]);
+seatingChart.set("Derek Noce", [7]);
 seatingChart.set("Kimberly Noce", [7]);
 seatingChart.set("Alphonse Bertoni", [7]);
 seatingChart.set("Denise Bertoni", [7]);
@@ -105,10 +104,6 @@ seatingChart.set("Bonnie Ruckh", [16]);
 seatingChart.set("Brandon Ruckh", [16]);
 seatingChart.set("Danielle Ruckh", [16]);
 seatingChart.set("Aaron Ruckh", [16]);
-seatingChart.set("Siren Chudgar", [8]);
-seatingChart.set("Jennifer Chudgar", [8]);
-seatingChart.set("Mayank Shah", [8]);
-
 seatingChart.set("Nitin Shah", [5]);
 seatingChart.set("Tripal Shah", [5]);
 seatingChart.set("Hardik Shah", [5]);
@@ -139,7 +134,9 @@ seatingChart.set("Varennyam Joshi", [11]);
 seatingChart.set("Khusbu Joshi", [11]);
 seatingChart.set("Anish Shah", [11]);
 seatingChart.set("Mohini Shah", [11]);
-
+seatingChart.set("Siren Chudgar", [8]);
+seatingChart.set("Jennifer Chudgar", [8]);
+seatingChart.set("Mayank Shah", [8]);
 seatingChart.set("Rachana Zaveri", [8]);
 seatingChart.set("Minesh Zaveri", [8]);
 seatingChart.set("Jatin Chudgar", [8]);
@@ -191,210 +188,3 @@ seatingChart.set("Nikita Shah", [12]);
 seatingChart.set("Jay Shah", [12]);
 seatingChart.set("Nikisha Shah", [12]);
 seatingChart.set("Amir Shah", [12]);
-
-
-
-
-// =================== DO NOT MODIFY BELOW =========================
-
-function clearInfo() {
-
-  document.getElementById('tableNum0').style.display = "none";
-  document.getElementById('line0').style.display = "none";
-  var guestList = document.getElementById('tableGuests0');
-  while (guestList.firstChild) {
-    guestList.removeChild(guestList.firstChild);
-  }
-
-  document.getElementById('tableNum1').style.display = "none";
-  document.getElementById('line1').style.display = "none";
-  guestList = document.getElementById('tableGuests1');
-  while (guestList.firstChild) {
-    guestList.removeChild(guestList.firstChild);
-  }
-
-  document.getElementById('errorMsg').style.display = "none";
-
-}
-
-function searchChart() {
-
-  let name = document.getElementById('name').value;
-
-  clearInfo();
-
-  // Checking if a key exists
-  if (seatingChart.has(name)) {
-
-    // Clear error message
-    document.getElementById('errorMsg').style.display = "none";
-
-    // Populate table number
-    var table = seatingChart.get(name);
-    
-    if (table.length > 1) {
-      var msg = document.getElementById('errorMsg');
-      msg.textContent = "Multiple guests are named " + name + ". " + "Please sit with your party.";
-      msg.style.display = "block";
-    }
-
-    for (let t in table) {
-      console.log(table[t]);
-      document.getElementById('tableNum' + t).innerText = "TABLE " + table[t];
-      document.getElementById('tableNum' + t).style.display = "block";
-      document.getElementById('line' + t).style.display = "block";
-
-      // Get all guests at table
-
-      var guestList = document.getElementById('tableGuests' + t);
-      for (const [guest, tableNum] of seatingChart.entries()) {
-        if (tableNum.includes(table[t])) {
-          var guestItem = document.createElement('li');
-          var guestName = document.createElement('p');
-          guestName.textContent = guest;
-          guestName.setAttribute('class', 'regText');
-          guestItem.appendChild(guestName);
-
-          guestList.appendChild(guestItem);
-
-          // tableMembers.push(guest);
-        }
-      }    
-    }
-    
-  }
-  else {
-    clearInfo();
-
-    // Display error message
-    if (name != "") {
-      var msg = document.getElementById('errorMsg');
-      msg.textContent = "'" + name + "'" + " was not found. Check capitalization";
-      msg.style.display = "block";
-    }
-    
-  }
-}
-
-
-// ====================== BUTTONS ==========================
-// const enterButton = document.querySelector(".enterButton");
-// enterButton.addEventListener("click", searchChart);
-
-const searchBar = document.getElementById("name");
-searchBar.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        searchChart();
-    }
-    else {
-      clearInfo();
-    }
-});
-
-autocomplete(document.getElementById("name"), allNames);
-
-let autompletedName = "";
-
-
-// ================= AUTOCOMPLETE ========================
-function autocomplete(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus;
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          // b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          b.setAttribute('data-value', arr[i]);
-          /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", function(e) {
-              /*insert the value for the autocomplete text field:*/
-              // inp.value = this.getElementsByTagName("input")[0].value;
-              inp.value = this.getAttribute('data-value');
-              // SUBMIT THE SEARCH
-              searchChart();
-              /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
-      }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-      x[i].parentNode.removeChild(x[i]);
-    }
-  }
-}
-/*execute a function when someone clicks in the document:*/
-document.addEventListener("click", function (e) {
-    closeAllLists(e.target);
-});
-}
